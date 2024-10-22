@@ -28,10 +28,10 @@ jobs:
         cache: 'yarn'
     - run: yarn install
 
-    - name: Run Hardhat Tests
-      run: npx hardhat test --network localhost --timeout 60000 --reporter spec
-      env:
-        NODE_ENV: test  # Example of setting an environment variable, if needed
+    # - name: Run Hardhat Tests
+    #   run: npx hardhat test --network localhost --timeout 60000 --reporter spec
+    #   env:
+    #     NODE_ENV: test  # Example of setting an environment variable, if needed
 
     - name: Generate Coverage Report
       run: npx hardhat coverage
