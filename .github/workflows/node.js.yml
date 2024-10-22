@@ -33,4 +33,7 @@ jobs:
       env:
         NODE_ENV: test  # Example of setting an environment variable, if needed
 
+    - name: Generate Coverage Report
+      run: npx hardhat coverage
+
 
